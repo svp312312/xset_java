@@ -86,25 +86,25 @@ class Programmer {
     // TODO: Проверить отработку методов в main
     //       - Создать двух программистов с разными характеристиками
     //       - Проверить работу всех методов класса
-public static void main(String[] args) {
-    Programmer programmer1 = new Programmer("Роман Тестировщиков", 30,true,1, true);
-    Programmer programmer2 = new Programmer("Александр Ким", 26,false,1, false);
-    System.out.println("\n===== ПРОГРАММИСТЫ РАБОТАЮТ =====");
-    programmer1.goWork();
-    programmer2.goWork();
-    programmer1.goWork();
-    programmer2.goWork();
-    programmer1.finishTask();
-    programmer2.finishTask();
-    programmer1.goWork();
-    programmer2.goWork();
-    System.out.println("\n===== ПРОГРАММИСТЫ ОБУЧАЮТ ДРУГ ДРУГА =====");
-    programmer2.teachJava(programmer1);
-    programmer1.teachJava(programmer2);
-    programmer1.teachJava(programmer2);
-    System.out.println("\n===== РАБОЧИЙ ДЕНЬ ОКОНЧЕН =====");
-    programmer1.goSleep();
-    programmer2.goSleep();
-}
+    public static void main(String[] args) {
+        Programmer programmer1 = new Programmer("Роман Тестировщиков", 30,true,1, true);
+        Programmer programmer2 = new Programmer("Александр Ким", 26,false,1, false);
+        System.out.println("\n===== ПРОГРАММИСТЫ РАБОТАЮТ =====");
+        programmer1.goWork();
+        programmer2.goWork();
+        programmer1.goWork();
+        programmer2.goWork();
+        programmer1.finishTask();
+        programmer2.finishTask();
+        programmer1.goWork();
+        programmer2.goWork();
+        System.out.println("\n===== ПРОГРАММИСТЫ ОБУЧАЮТ ДРУГ ДРУГА =====");
+        programmer2.teachJava(programmer1);
+        programmer1.teachJava(programmer2);
+        programmer1.teachJava(programmer2);
+        System.out.println("\n===== РАБОЧИЙ ДЕНЬ ОКОНЧЕН =====");
+        programmer1.goSleep();
+        programmer2.goSleep();
+    }
 }
 
