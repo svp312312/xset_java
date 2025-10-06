@@ -58,10 +58,10 @@ class Programmer {
     //       - Вывести сообщение "[name] идет спать."
     //       - Уменьшить tiredness на 1
 
-    public int goSleep() {
+    public void goSleep() {
         System.out.println(name + " идет спать.");
         tiredness--;
-        return tiredness;
+
     }
 
 
